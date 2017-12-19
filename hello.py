@@ -35,11 +35,12 @@ def show_url():
 #/login?next=/
 #/user/John%20Doe
 
+
 """
 #使用选定的 'static' 端点就可以生成相应的 URL 。:
 #url_for('static', filename='style.css')
 
-#from flask import abort, redirect, url_for
+#from flask import abort, redirect
 
 #@app.route('/')
 #def index():
