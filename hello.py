@@ -57,18 +57,6 @@ from flask import render_template
 def page_not_found(error):
     return render_template('page_not_found.html'), 404
 
-============================================================
-关于响应
-@app.errorhandler(404)
-def not_found(error):
-    return render_template('error.html'), 404
-可以使用 make_response() 包裹返回表达式，获得响应对象，并对该对象 进行修改，然后再返回：
-
-@app.errorhandler(404)
-def not_found(error):
-    resp = make_response(render_template('error.html'), 404)
-    resp.headers['X-Something'] = 'A value'
-    return resp
 """
 
 if __name__ == "__main__":
